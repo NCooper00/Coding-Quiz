@@ -1,0 +1,56 @@
+
+
+/* Header section below */
+
+.highscore-button {
+    display: inline-block;
+    font-weight: bolder;
+    padding: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.timer {
+    padding: 10px 10px 0px 0px;
+    float: right;
+}
+
+
+
+
+
+/* Body section below */
+
+.defaultHeader {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 75px;
+    font-weight: bolder;
+}
+
+.pParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.defaultParagraph {
+    text-align: center;
+    padding-top: 25px;
+    width: 500px;
+}
+
+.buttonParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.startButton {
+    color: white;
+    background-color: purple;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+    border: 2px solid black;
+}
