@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<header class="headerClass">
-    <h2 class="highscore-button">View Highscores</h2>
-    <h2 class="timer">Time: 0</h2>
-</header>
 
 
 
 <body class="mainBody">
+    <header class="headerClass">
+        <h2 class="highscore-button">View Highscores</h2>
+        <h2 class="timer">Time Left: 1:00</h2>
+    </header>
     
     <h1 class="defaultHeader">Coding Quiz Challenge</h1>
 
     <div class="pParent">
         <p class="defaultParagraph">
-            Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            Try to answer the following questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
     </div>
 
@@ -32,5 +32,37 @@
         </button>
     </div>
 
+    <div class="quizSpace">
+        <div class="quizQuestion">Question</div>
+
+        <div class="answerSection">
+            <div class="answers one" aria-enabled="false"></div>
+            <div class="answers two" aria-enabled="false"></div>
+            <div class="answers three" aria-enabled="false"></div>
+            <div class="answers four" aria-enabled="false"></div>
+        </div>
+
+        <button class="next">Next Question</button>
+    </div>
+
+
+    <div class="highScores" data-visible="false">
+        <h1 class="highscoreHead">High Scores!</h1>
+
+        <div class="highscoreSection">
+
+        </div>
+
+        <div class="lastScore">Your Score: </div>
+
+        <div class="initial">Initials:</div>
+        <input type="text" class="initials">
+
+        <button class="save">Save</button>
+
+        <button class="return">Return</button>
+    </div>
+
 </body>
+<script src="/assets/script.js"></script>
 </html>

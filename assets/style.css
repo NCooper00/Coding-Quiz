@@ -1,12 +1,18 @@
 
 
 /* Header section below */
+li {
+    list-style: none;
+}
 
 .highscore-button {
     display: inline-block;
     font-weight: bolder;
     padding: 10px 0px 0px 10px;
     cursor: pointer;
+}
+.highscore-button:hover {
+    color: #6F6F85;
 }
 
 .timer {
@@ -48,9 +54,138 @@
 
 .startButton {
     color: white;
-    background-color: purple;
+    background-color: #AA180E;
     border-radius: 12px;
     padding: 4px;
     cursor: pointer;
     border: 2px solid black;
+}
+.startButton:hover {
+    background: #EE3C2F;
+}
+
+.quizSpace {
+    width: 100%;
+    height: 50%;
+    background-color: #6F6F85;
+    position: fixed;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quizQuestion {
+    width: 800px;
+    height: fit-content;
+    margin: 0% 30%;
+    background-color: rgb(197, 197, 197);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.answerSection {
+    width: 800px;
+    height: fit-content;
+    background-color: #131313;
+    color: white;
+    font-size: 20px;
+    margin: 0% 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.answers {
+    width: 100%;
+    height: fit-content;
+    background-color: #300c0a;
+    cursor: pointer;
+    margin: 20px 10px;
+}
+
+.answers[aria-enabled="true"] {
+    border: 3px solid white;
+}
+
+.next {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.highScores[data-visible="false"] {
+    display: none;
+}
+
+.highScores[data-visible="true"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #131313;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(204, 204, 204);
+    font-size: 30px;
+    z-index: 1000;
+}
+
+.highscoreHead {
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+}
+
+.highscoreSection {
+    background-color: #7c7c7c;
+    color: black;
+    font-size: 25px;
+    width: 50%;
+    height: 30%;
+    margin: 50px 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastScore {
+    width: 100%;
+}
+
+.initial {
+    width: fit-content;
+    height: 30px;
+    margin: 5px 0% 5px 40%;
+}
+
+.save {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 40% 5px 0%;
+}
+
+.initials {
+    width: 200px;
+    height: 30px;
+    margin: 5px 0% 5px 0%;
+}
+
+.return {
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    background-color: #300c0a;
+    color: aliceblue;
+    /* position: absolute; */
+    text-align: center;
+    /* bottom: 25%; */
+    border-radius: 10px;
 }
